@@ -2,98 +2,84 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
-
-  <link href="style/main.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
-  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
-  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support David Martinez's Moon Dream</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-  <div class="container">
-    <div class="heading">
-      <h1 class="title">LIGMA</h1>
-      <div class="scores-container">
-        <div class="score-container">0</div>
-        <div class="best-container">0</div>
-      </div>
-    </div>
 
-    <div class="above-game">
-      <p class="game-intro">It's so sad that Steve Jobs dies from <strong>LIGMA</strong></p>
-      <a class="restart-button">New Game</a>
-    </div>
-
-    <div class="game-container">
-      <div class="game-message">
-        <p></p>
-        <div class="lower">
-	        <a class="keep-playing-button">Keep going</a>
-          <a class="retry-button">Try again</a>
-        </div>
-      </div>
-
-      <div class="grid-container">
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-      </div>
-
-      <div class="tile-container">
-
-      </div>
-    </div>
-
-    <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
-    </p>
-    <hr>
-    <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
-    </p>
-    <hr>
-    <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
-    </p>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Support David's Moon Dream</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About David</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#support">Support David</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
   </div>
+</nav>
 
-  <script src="js/bind_polyfill.js"></script>
-  <script src="js/classlist_polyfill.js"></script>
-  <script src="js/animframe_polyfill.js"></script>
-  <script src="js/keyboard_input_manager.js"></script>
-  <script src="js/html_actuator.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/tile.js"></script>
-  <script src="js/local_storage_manager.js"></script>
-  <script src="js/game_manager.js"></script>
-  <script src="js/application.js"></script>
+<!-- Header Section -->
+<header class="jumbotron jumbotron-fluid text-center">
+  <div class="container">
+    <h1>Support David Martinez's Moon Dream</h1>
+    <p class="lead">Help David make his dream of going to the moon with Lucy a reality!</p>
+    <a class="btn btn-primary btn-lg" href="#support" role="button">Support Now</a>
+  </div>
+</header>
+
+<!-- About David Section -->
+<section id="about" class="container py-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>About David Martinez</h2>
+      <p>
+        David is a member of the Cyberpunk Edgerunners and has a dream of exploring the moon with his loyal companion, Lucy. Learn more about his inspiring journey and aspirations.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="david_image.jpg" alt="David Martinez" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+<!-- Support David Section -->
+<section id="support" class="container py-5">
+  <h2 class="text-center">Support David's Moon Dream</h2>
+  <p class="text-center">Your contribution can make a big difference in turning his dream into reality.</p>
+  <div class="text-center">
+    <a class="btn btn-primary btn-lg" href="#donate" role="button">Donate Now</a>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container py-5">
+  <h2 class="text-center">Contact Us</h2>
+  <p class="text-center">If you have any questions or would like to get in touch, please feel free to contact us.</p>
+  <div class="text-center">
+    <a class="btn btn-primary" href="mailto:contact@davidmoonmission.com" role="button">Email Us</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+  <p>&copy; 2023 David's Moon Mission</p>
+</footer>
+
+<!-- Include Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
